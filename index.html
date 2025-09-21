@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pump Empire</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: white;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+    .pill {
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 5px;
+      background: linear-gradient(135deg, #00ff7f, #ffffff);
+    }
+    .hand {
+      width: 100px;
+      height: 100px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      animation: float 2s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-5xl font-bold mb-10">Welcome to Pump Empire</h1>
+
+  <div class="flex flex-wrap justify-center">
+    <div class="hand">
+      <div class="pill"></div>
+      <div class="pill"></div>
+    </div>
+    <div class="hand">
+      <div class="pill"></div>
+      <div class="pill"></div>
+      <div class="pill"></div>
+    </div>
+    <div class="hand">
+      <div class="pill"></div>
+    </div>
+    <div class="hand">
+      <div class="pill"></div>
+      <div class="pill"></div>
+    </div>
+  </div>
+
+  <p class="mt-10 text-xl text-center max-w-xl">
+    Join the revolution, embrace your destiny, and become part of the unstoppable <strong>Pump Empire</strong>.
+  </p>
+</body>
+</html>
